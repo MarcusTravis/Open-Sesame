@@ -38,7 +38,7 @@
 
   ## Images
 
-  ![image of xd](./assets/images/xdimg.png)
+  ![image of xd](/public/assets/images/xdimg.png)
 
   ## Questions
  
