@@ -9,8 +9,8 @@
   <link href="stylesheets/style.css" rel="stylesheet">
 </head>
 
-<body>
-  <nav class="navbar navbar-default">
+<body style="background-image: url(https://images.unsplash.com/photo-1570912355338-cdb934b76b12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=677&q=80)">
+  <nav class="navbar navbar-default bg-gold">
     <div class="container-fluid">
       <div class="navbar-header">
       </div>
@@ -19,17 +19,21 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
-        <h2>Login Form</h2>
+        <h2 class="bg-gold text-center">OPEN SESAME</h2>
+        <p class="bg-gold text-center">Welcome to a place to securely store your passwords, usernames,
+          & utilize our built in password generator.</p>
         <form class="login">
           <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="email-input" placeholder="Email">
+            <label for="exampleInputEmail1" class="bg-gold">Email address</label>
+            <input type="email" class="form-control bg-gold" id="email-input" placeholder="Email">
           </div>
           <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="password-input" placeholder="Password">
+            <label for="exampleInputPassword1" class="bg-gold">Password</label>
+            <input type="password" class="form-control bg-gold" id="password-input" placeholder="Password">
           </div>
-          <button type="submit" class="btn btn-default">Login</button>
+          <div class="col text-center">
+            <button type="submit" class="btn btn-default bg-gold">Sign In</button>
+          </div>
         </form>
         <br />
         <p>Or sign up <a href="/">here</a></p>
