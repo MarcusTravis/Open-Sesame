@@ -2,7 +2,8 @@
   # Open Sesame
 
   ## Description
-  User can utilize Open Sesame as a secure location to store all usernames and passwords.  Once logged in, the user will be displayed a table where they store all of their usernames and passwords.  They will have the ability to add, update, and delete the username and password fields. There will also be a link a password generator if needed.
+  User can utilize Open Sesame as a secure location to store all usernames and passwords.  Once logged in, the user will be displayed a table where they store all of their usernames and passwords.  They will have the ability to add, update, and delete the username and   password fields. There will also be a link a password generator if needed.
+  Deploy the app here!:https://safe-badlands-31285.herokuapp.com/
 
   ![GitHub repo size](https://img.shields.io/github/repo-size/saDS/Open-Sesame)
 
