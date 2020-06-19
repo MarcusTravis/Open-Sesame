@@ -1,3 +1,3 @@
-CREATE DATABASE passport_demo;
+CREATE DATABASE opensesame;
 
-USE passport_demo;
+USE opensesame;
