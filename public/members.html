@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Open Sesame</title>
+    <title>Home Page</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -13,8 +13,10 @@
 
   <body
     style="
-      background-image: url(https://images.unsplash.com/photo-1582139329536-e7284fece509?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80">
-    <nav class="navbar navbar-default">
+      background-image: url(https://images.unsplash.com/photo-1582139329536-e7284fece509?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80;
+    )"
+  >
+    <nav class="navbar navbar-default bg-gold">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="/logout">
@@ -25,9 +27,13 @@
     </nav>
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <h2 class="bg-gold">Welcome <span class="member-name"></span></h2>
-          <h3 class="bg-gold">Add new log in credentials to store:</h3>
+        <div class="col-md-12 text-center">
+          <h2 class="w-20 bg-gold rcorners">
+            Welcome <span class="member-name"></span>
+          </h2>
+          <h3 class="bg-gold w-20 main-paragraph rcorners">
+            Add new log in credentials to store:
+          </h3>
         </div>
         <div class="form-group">
           <label for="InputSite" class="bg-gold">Site: </label>
@@ -58,6 +64,35 @@
         </div>
         <div class="col text-center">
           <button type="submit" class="btn btn-default bg-gold">Submit</button>
+        </div>
+        <br />
+        <div class="table-responsive-sm">
+          <table class="table table-sm table-dark bg-gold">
+            <thead>
+              <tr>
+                <th scope="col">Site</th>
+                <th scope="col">Email/Username</th>
+                <th scope="col">Password</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>yourmom.com</td>
+                <td>dadjokes@gnail.com</td>
+                <td>buttonsmash</td>
+              </tr>
+              <tr>
+                <td>Meeseeks Near You</td>
+                <td>wabbalubbadubdub</td>
+                <td>peaceamongworlds</td>
+              </tr>
+              <tr>
+                <td>squanch.org</td>
+                <td>awhgeez@mnm.com</td>
+                <td>jessica</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
