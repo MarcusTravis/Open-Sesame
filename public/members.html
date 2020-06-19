@@ -28,40 +28,33 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
-          <h2 class="w-20 bg-gold rcorners">
-            Welcome <span class="member-name"></span>
-          </h2>
-          <h3 class="bg-gold w-20 main-paragraph rcorners">
-            Add new log in credentials to store:
-          </h3>
+          <div class="row">
+            <div class="col-6">
+              <h2 class="bg-gold rcorners">
+                Welcome <span class="member-name"></span>
+              </h2>
+              <h3 class="bg-gold main-paragraph rcorners">
+                Add new log in credentials to store:
+              </h3>
+            </div>
+          </div>
         </div>
+        
         <div class="form-group">
           <label for="InputSite" class="bg-gold">Site: </label>
-          <input
-            type="site"
-            class="form-control bg-gold"
-            id="site-input"
-            placeholder="Site"
-          />
+          <input type="website" class="new-item1 form-control bg-gold" id="site-input" placeholder="Site"/>
         </div>
+
         <div class="form-group">
           <label for="exampleInputEmail1" class="bg-gold">Email address</label>
-          <input
-            type="email"
-            class="form-control bg-gold"
-            id="email-input"
-            placeholder="Email"
-          />
+          <input type="username" class="new-item2 form-control bg-gold" id="email-input" placeholder="Username or Email"/>
         </div>
+
         <div class="form-group">
           <label for="exampleInputPassword1" class="bg-gold">Password</label>
-          <input
-            type="password"
-            class="form-control bg-gold"
-            id="password-input"
-            placeholder="Password"
-          />
+          <input type="password" class="new-item3 form-control bg-gold" id="password-input" placeholder="Password"/>
         </div>
+
         <div class="col text-center">
           <button type="submit" class="btn btn-default bg-gold">Submit</button>
         </div>
@@ -76,21 +69,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>yourmom.com</td>
-                <td>dadjokes@gnail.com</td>
-                <td>buttonsmash</td>
-              </tr>
-              <tr>
-                <td>Meeseeks Near You</td>
-                <td>wabbalubbadubdub</td>
-                <td>peaceamongworlds</td>
-              </tr>
-              <tr>
-                <td>squanch.org</td>
-                <td>awhgeez@mnm.com</td>
-                <td>jessica</td>
-              </tr>
+              {{#each }}
             </tbody>
           </table>
         </div>
