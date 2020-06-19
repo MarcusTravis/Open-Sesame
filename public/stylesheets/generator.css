@@ -12,6 +12,10 @@ body,
   padding: 0;
 }
 
+.mt-6 {
+  margin-top: 90px;
+}
+
 body {
   font-family: sans-serif;
   background-color: #f9fbfd;
