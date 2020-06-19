@@ -4,7 +4,7 @@ form.login {
 }
 .bg-gold {
   background-color: #F6F620;
-  opacity: 90%;
+  opacity: 80%;
 }
 .rcorners {
 border-radius: 25px;
@@ -15,6 +15,11 @@ border-radius: 25px;
 }
 .mt-6 {
   margin-top: 90px;
+}
+.navbar {
+  font-size: 25px;
+  color: white;
+  text-align: center;
 }
 .btn {
   border: none;
