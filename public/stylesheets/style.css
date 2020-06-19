@@ -4,7 +4,7 @@ form.login {
 }
 .bg-gold {
   background-color: #F6F620;
-  opacity: 90%;
+  opacity: 80%;
 }
 .rcorners {
 border-radius: 25px;
@@ -15,4 +15,35 @@ border-radius: 25px;
 }
 .mt-6 {
   margin-top: 90px;
+}
+.navbar {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+.btn {
+  border: none;
+  background-color: rgb(87, 80, 80);
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+    0px;
+  color: hsl(0, 0%, 100%);
+  display: inline-block;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 16px 16px 16px 20px;
+  padding: 14px 34px;
+  text-align: center;
+  cursor: pointer;
+}
+.card {
+  background-color: #F6F620;
+  border-radius: 5px;
+  border-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  color: hsl(206, 17%, 28%);
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px 40px;
 }
