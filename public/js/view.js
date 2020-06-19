@@ -108,17 +108,23 @@ $(document).ready(function () {
 	function createNewRow(todo) {
 		var $newInputRow = $(
 			[
-				"<li class='list-group-item todo-item'>",
-				"<span>",
-				todo.website,
-				todo.username,
-				todo.password,
-				"</span>",
-				"<input type='website' class='edit' style='display: none;'>",
-				"<input type='username' class='edit' style='display: none;'>",
-				"<input type='password' class='edit' style='display: none;'>",
-				"<button class='delete btn btn-danger'>x</button>",
-				"</li>",
+				// "<li class='list-group-item todo-item'>",
+        "<tr>",
+        "<th>",
+        todo.website,
+        "</th>",
+        "<th>",
+        todo.username,
+        "</th>",
+        "<th>",
+        todo.password,
+        "<button class='delete btn btn-danger'>x</button>",
+        "</th>",
+        "<input type='website' class='edit' style='display: none;'>",
+		"<input type='username' class='edit' style='display: none;'>",
+		"<input type='password' class='edit' style='display: none;'>",
+        "</tr>",
+        // "</li>"
 			].join(" ")
 		);
 

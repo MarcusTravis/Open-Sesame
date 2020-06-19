@@ -1,99 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Open Sesame</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <link href="stylesheets/style.css" rel="stylesheet" />
-  </head>
 
-  <body
-    style="
+<head>
+  <title>Open Sesame</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <link href="stylesheets/style.css" rel="stylesheet" />
+</head>
+
+<body
+  style="
       background-image: url(https://images.unsplash.com/photo-1582139329536-e7284fece509?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80)">
-    <div class="container-fluid">
-      <div class="fixed-top">
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-dark p-4">
-            <div class="row">
-              <a class="text-white h4" href="generator.html">Generate a Random Password</a>
-            </div>
-            <div class="row">
-              <a class="navbar-brand" href="login.html">Logout</a>
-            </div>
+  <div class="container-fluid">
+    <div class="fixed-top">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <div class="row">
+            <a class="text-white h4" href="generator.html">Generate a Random Password</a>
+          </div>
+          <div class="row">
+            <a class="navbar-brand" href="login.html">Logout</a>
           </div>
         </div>
-        <nav class="navbar navbar-dark bg-dark">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarToggleExternalContent"
-            aria-controls="navbarToggleExternalContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </nav>
       </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
     </div>
-    <div class="container mt-6">
-      <div class="row">
-        <div class="col-md-6 offset-md-3">
-          <ul class="list-group todo-list">
-            <li class="list-group-item new-item">
-              <form id="todo-form">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-10">
-                      <input
-                        class="new-item1 form-control"
-                        placeholder="Website?"
-                        type="website"
-                      />
-                      <input
-                        class="new-item2 form-control"
-                        placeholder="Username?"
-                        type="username"
-                      />
-                      <input
-                        class="new-item3 form-control"
-                        placeholder="Password?"
-                        type="password"
-                      />
-                    </div>
-                    <div class="col-2">
-                      <button type="submit" class="btn btn-success">
-                        Add Todo
-                      </button>
-                    </div>
+  </div>
+  <div class="container mt-6">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <ul class="list-group todo-list">
+          <li class="list-group-item new-item">
+            <form id="todo-form">
+              <div class="container">
+                <div class="row">
+                  <div class="col-10">
+                    <input class="new-item1 form-control" placeholder="Website?" type="website" />
+                    <input class="new-item2 form-control" placeholder="Username?" type="username" />
+                    <input class="new-item3 form-control" placeholder="Password?" type="input" />
+                  </div>
+                  <div class="col-2">
+                    <button type="submit" class="btn btn-success">
+                      Add Login
+                    </button>
                   </div>
                 </div>
-              </form>
-            </li>
-            <span class="todo-container"> </span>
-          </ul>
-        </div>
+              </div>
+            </form>
+          </li>
+          <table class="table bg-white text-center">
+            <thead>
+              <tr>
+                <th>Website</th>
+                <th>Username/Email</th>
+                <th>Password</th>
+              </tr>
+            </tr>
+                <tr class="todo-container">
+            </thead>
+          </table>
+        </ul>
       </div>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript" src="js/members.js"></script>
-    <script src="js/view.js" type="text/javascript"></script>    
-  </body>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/members.js"></script>
+  <script src="js/view.js" type="text/javascript"></script>
+</body>
+
 </html>
