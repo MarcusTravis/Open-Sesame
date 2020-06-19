@@ -18,18 +18,17 @@ border-radius: 25px;
 }
 .navbar {
   font-size: 25px;
+  background-color: #343A40;
   color: white;
-  text-align: center;
+  justify-content: center;
 }
 .btn {
   border: none;
-  background-color: rgb(87, 80, 80);
+  background-color: #343A40(87, 80, 80);
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
   color: hsl(0, 0%, 100%);
-  display: inline-block;
-  font-size: 22px;
   line-height: 22px;
   margin: 16px 16px 16px 20px;
   padding: 14px 34px;
