@@ -58,72 +58,27 @@
     </nav> -->
     <div class="container mt-6">
       <div class="row">
-        <div class="col-md-12 text-center">
-          <h2 class="w-30 bg-gold rcorners">
-            Welcome <span class="member-name"></span>
-          </h2>
-          <h3 class="bg-gold w-30 main-paragraph rcorners">
-            Add new log in credentials to store:
-          </h3>
-        </div>
-        <div class="col-12 form-group">
-          <label for="InputSite" class="bg-gold">Site: </label>
-          <input
-            type="site"
-            class="form-control bg-gold"
-            id="site-input"
-            placeholder="Site"
-          />
-        </div>
-        <div class="col-12 form-group">
-          <label for="exampleInputEmail1" class="bg-gold">Email address</label>
-          <input
-            type="email"
-            class="form-control bg-gold"
-            id="email-input"
-            placeholder="Email"
-          />
-        </div>
-        <div class="col-12 form-group">
-          <label for="exampleInputPassword1" class="bg-gold">Password</label>
-          <input
-            type="password"
-            class="form-control bg-gold"
-            id="password-input"
-            placeholder="Password"
-          />
-        </div>
-        <div class="col-12 text-center">
-          <button type="submit" class="btn btn-default bg-gold">Submit</button>
-        </div>
-        <br />
-        <div class="col-12 justify-content-center table-responsive-sm">
-          <table class="table table-sm table-dark bg-gold">
-            <thead>
-              <tr>
-                <th scope="col">Site</th>
-                <th scope="col">Email/Username</th>
-                <th scope="col">Password</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>yourmom.com</td>
-                <td>dadjokes@gnail.com</td>
-                <td>buttonsmash</td>
-              </tr>
-              <tr>
-                <td>Meeseeks Near You</td>
-                <td>wabbalubbadubdub</td>
-                <td>peaceamongworlds</td>
-              </tr>
-              <tr>
-                <td>squanch.org</td>
-                <td>awhgeez@mnm.com</td>
-                <td>jessica</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="col-md-6 offset-md-3">
+          <ul class="list-group todo-list">
+            <li class="list-group-item new-item">
+              <form id="todo-form">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-10">
+            <input class="new-item1 form-control" placeholder="Website?" type="website" />
+            <input class="new-item2 form-control" placeholder="Username?" type="username" />
+            <input class="new-item3 form-control" placeholder="Password?" type="password" />
+                    </div>
+                    <div class="col-2">
+                      <button type="submit" class="btn btn-success">Add Todo</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </li>
+            <span class="todo-container">
+            </span>
+          </ul>
         </div>
       </div>
     </div>
