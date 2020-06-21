@@ -34,12 +34,12 @@ header {
   padding-top: 0px;
   color: hsl(206, 17%, 28%);
 }
-h1 {
-  color: white;
+#h2 {
+  color: #F6F620;
 }
 
 .card {
-  background-color: #F6F620;
+  background-color: #343A40;
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
@@ -82,11 +82,11 @@ h1 {
 
 .btn {
   border: none;
-  background-color: rgb(87, 80, 80);
+  background-color: #F6F620;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
-  color: hsl(0, 0%, 100%);
+  color: #343A40;
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
