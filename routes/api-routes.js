@@ -47,27 +47,27 @@ module.exports = function(app) {
     }
   });
 
-  // GET route for getting all of the todos
-  app.get("/api/todos", function(req, res) {
+  // GET route for getting all of the pws
+  app.get("/api/pws", function(req, res) {
     // findAll returns all entries for a table when used with no options
-    db.Todo.findAll({}).then(function(dbTodo) {
-      // We have access to the todos as an argument inside of the callback function
-      res.json(dbTodo);
+    db.Pw.findAll({}).then(function(dbPw) {
+      // We have access to the pws as an argument inside of the callback function
+      res.json(dbPw);
     });
   });
 
-  // POST route for saving a new todo
-  app.post("/api/todos", function(req, res) {
+  // POST route for saving a new pw
+  app.post("/api/pws", function(req, res) {
     // create takes an argument of an object describing the item we want to
     // insert into our table. In this case we just we pass in an object with a text
     // and complete property (req.body)
-    db.Todo.create({
+    db.Pw.create({
       website: req.body.website,
       username: req.body.username,
       password: req.body.password,
-    }).then(function(dbTodo) {
-      // We have access to the new todo as an argument inside of the callback function
-      res.json(dbTodo);
+    }).then(function(dbPw) {
+      // We have access to the new pw as an argument inside of the callback function
+      res.json(dbPw);
     })
       .catch(function(err) {
       // Whenever a validation or flag fails, an error is thrown
@@ -76,26 +76,26 @@ module.exports = function(app) {
       });
   });
 
-  // DELETE route for deleting todos. We can get the id of the todo to be deleted from
+  // DELETE route for deleting pws. We can get the id of the pw to be deleted from
   // req.params.id
-  app.delete("/api/todos/:id", function(req, res) {
-    // We just have to specify which todo we want to destroy with "where"
-    db.Todo.destroy({
+  app.delete("/api/pws/:id", function(req, res) {
+    // We just have to specify which pw we want to destroy with "where"
+    db.Pw.destroy({
       where: {
         id: req.params.id
       }
-    }).then(function(dbTodo) {
-      res.json(dbTodo);
+    }).then(function(dbPw) {
+      res.json(dbPw);
     });
 
   });
 
-  // PUT route for updating todos. We can get the updated todo data from req.body
-  app.put("/api/todos", function(req, res) {
+  // PUT route for updating pws. We can get the updated pw data from req.body
+  app.put("/api/pws", function(req, res) {
 
     // Update takes in an object describing the properties we want to update, and
     // we use where to describe which objects we want to update
-    db.Todo.update({
+    db.Pw.update({
       website: req.body.website,
       username: req.body.username,
       password: req.body.password,
@@ -103,8 +103,8 @@ module.exports = function(app) {
       where: {
         id: req.body.id
       }
-    }).then(function(dbTodo) {
-      res.json(dbTodo);
+    }).then(function(dbPw) {
+      res.json(dbPw);
     })
       .catch(function(err) {
       // Whenever a validation or flag fails, an error is thrown
