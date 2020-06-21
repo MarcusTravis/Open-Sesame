@@ -59,3 +59,10 @@ border-radius: 25px;
   max-width: 800px;
   padding: 30px 40px;
 }
+
+#top-bar {
+  font-size: 25px;
+  background-color: #343A40;
+  color: white;
+  justify-content: center;
+}
