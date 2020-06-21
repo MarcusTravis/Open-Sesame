@@ -22,6 +22,7 @@ border-radius: 25px;
 .mt-6 {
   margin-top: 90px;
 }
+
 .top-bar {
   font-size: 25px;
   background-color: #343A40;
@@ -35,6 +36,7 @@ border-radius: 25px;
   color: white;
   justify-content: center;
 }
+
 .btn {
   border: none;
   background-color: #343A40(87, 80, 80);

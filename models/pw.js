@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-  var Todo = sequelize.define("Todo", {
+  var Pw = sequelize.define("Pw", {
     website: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -22,5 +22,5 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
   });
-  return Todo;
+  return Pw;
 };
