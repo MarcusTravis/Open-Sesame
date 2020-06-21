@@ -16,12 +16,7 @@ border-radius: 25px;
 .mt-6 {
   margin-top: 90px;
 }
-.navbar {
-  font-size: 25px;
-  background-color: #343A40;
-  color: white;
-  justify-content: center;
-}
+
 .btn {
   border: none;
   background-color: #343A40(87, 80, 80);
@@ -45,4 +40,11 @@ border-radius: 25px;
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+}
+
+#top-bar {
+  font-size: 25px;
+  background-color: #343A40;
+  color: white;
+  justify-content: center;
 }
