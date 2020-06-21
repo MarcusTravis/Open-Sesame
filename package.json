@@ -14,6 +14,7 @@
   "dependencies": {
     "bcryptjs": "2.4.3",
     "express": "^4.17.0",
+    "express-handlebars": "^4.0.4",
     "express-session": "^1.16.1",
     "fs": "0.0.1-security",
     "mysql2": "^1.6.5",
@@ -21,5 +22,14 @@
     "passport-local": "^1.0.0",
     "path": "^0.12.7",
     "sequelize": "^5.8.6"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcusTravis/Open-Sesame.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MarcusTravis/Open-Sesame/issues"
+  },
+  "homepage": "https://github.com/MarcusTravis/Open-Sesame#readme"
 }
