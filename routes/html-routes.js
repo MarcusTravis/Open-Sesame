@@ -25,9 +25,9 @@ module.exports = function (app) {
 
   app.get("/generator", function (req, res) {
     // If the user already has an account send them to the members page
-    if (req.user) {
-      return res.redirect("/members");
-    }
+    // if (req.user) {
+    //   return res.redirect("/members");
+    // }
     res.render("generator");
   });
   // Here we've add our isAuthenticated middleware to this route.
