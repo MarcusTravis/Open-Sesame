@@ -90,16 +90,16 @@ $(document).ready(function () {
 	function createNewRow(pw) {
 		var $newInputRow = $(
 			[
-				// "<li class='list-group-item todo-item'>",
+				// "<li class='list-group-item pw-item'>",
         "<tr>",
         "<td class=`h3`>",
-        todo.website,
+        pw.website,
         "</td>",
         "<td class=`h3`>",
-        todo.username,
+        pw.username,
         "</td>",
         "<td class=`h3`>",
-        todo.password,
+        pw.password,
         "</td>",
         "<td>",
         "<button class='rounded text-white bg-danger'>Delete</button>",
