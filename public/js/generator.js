@@ -69,7 +69,7 @@ const characters = [
   "Y",
   "Z",
 ];
-//declare generate button to refer back to html generate id
+//declare generate button to refer back to generate id
 const generateBtn = document.querySelector("#generate");
 
 //Starter code
