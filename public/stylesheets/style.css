@@ -6,6 +6,12 @@ form.login {
   background-color: #F6F620;
   opacity: 80%;
 }
+.text-gold {
+  color: #F6F620;
+}
+#op {
+  opacity: 80%;
+}
 .rcorners {
 border-radius: 25px;
 }
@@ -16,12 +22,21 @@ border-radius: 25px;
 .mt-6 {
   margin-top: 90px;
 }
-.navbar {
+
+.top-bar {
+  font-size: 25px;
+  background-color: #343A40;
+  color: white;
+  justify-content: center;
+  opacity: 80%;
+}
+/* .navbar {
   font-size: 25px;
   background-color: #343A40;
   color: white;
   justify-content: center;
 }
+
 .btn {
   border: none;
   background-color: #343A40(87, 80, 80);
@@ -34,7 +49,7 @@ border-radius: 25px;
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
-}
+} */
 .card {
   background-color: #F6F620;
   border-radius: 5px;
