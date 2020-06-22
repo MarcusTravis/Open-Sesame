@@ -91,22 +91,24 @@ $(document).ready(function () {
 		var $newInputRow = $(
 			[
 				// "<li class='list-group-item pw-item'>",
-				"<tr>",
-				"<th>",
-				pw.website,
-				"</th>",
-				"<th>",
-				pw.username,
-				"</th>",
-				"<th>",
-				pw.password,
-				"<button class='delete btn btn-danger'>x</button>",
-				"</th>",
-				"<input type='website' class='edit' style='display: none;'>",
-				"<input type='username' class='edit' style='display: none;'>",
-				"<input type='password' class='edit' style='display: none;'>",
-				"</tr>",
-				// "</li>"
+        "<tr>",
+        "<td class=`h3`>",
+        pw.website,
+        "</td>",
+        "<td class=`h3`>",
+        pw.username,
+        "</td>",
+        "<td class=`h3`>",
+        pw.password,
+        "</td>",
+        "<td>",
+        "<button class='rounded text-white bg-danger'>Delete</button>",
+        "</td>",
+        "<input type='website' class='edit' style='display: none;'>",
+		"<input type='username' class='edit' style='display: none;'>",
+		"<input type='password' class='edit' style='display: none;'>",
+        "</tr>",
+        // "</li>"
 			].join(" ")
 		);
 
