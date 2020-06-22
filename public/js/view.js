@@ -6,7 +6,7 @@ $(document).ready(function () {
 	// Our new PWS will go inside the pwContainer
 	var $pwContainer = $(".pw-container");
 	// Adding event listeners for deleting, editing, and adding pws
-	$(document).on("click", "button.delete", deletePw);
+	$(document).on("click", "button.delete",deletePw);
 	$(document).on("click", ".pw-item1", ".pw-item2", ".pw-item3", editPw);
 	$(document).on("keyup", ".pw-item1", ".pw-item2", ".pw-item3", finishEdit);
 	$(document).on("blur", ".pw-item1", ".pw-item2", ".pw-item3", cancelEdit);
