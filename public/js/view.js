@@ -46,12 +46,23 @@ $(document).ready(function () {
 		}).then(getPws);
 	}
 
+	$(".delete-btn").on("click", function(event) {
+		var id = $(this).data("id");
+	
+		// Send the DELETE request.
+		$.ajax({
+			method: "DELETE",
+			url: "/api/pws/" + id,
+		}).then(getPws);
+	  });
+
 	// This function handles showing the input box for a user to edit a pw
 	function editPw() {
 		var currentPw = $(this).data("pw");
-		$(this).children().hide();
+		// $(this).children().hide();
+		$(this).children("span").css("display", "none"); 
 		$(this).children("input.edit").val(currentPw.text);
-		$(this).children("input.edit").show();
+		$(this).children("input.edit").css("display", "inline");
 		$(this).children("input.edit").focus();
 	}
 	// This function starts updating a pw in the database if a user hits the "Enter Key"
@@ -133,4 +144,6 @@ $(document).ready(function () {
 		$newItemInput2.val("");
 		$newItemInput3.val("");
 	}
+
+
 });

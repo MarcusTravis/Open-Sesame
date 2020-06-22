@@ -52,10 +52,25 @@
                     <tbody class="pw-container text-center">
                         {{#each pws}}
                         <tr>
-                            <td>{{website}}</td>
-                            <td>{{username}}</td>
-                            <td>{{password}}</td>
-                            <td><button class='rounded text-white bg-danger'>Delete</button>
+                            <td class="pw-item1" data-pw={{website}}>
+                                <span>
+                                    {{website}}
+                                </span>
+                            <input type="website" class="edit" style="display: none;">
+                            </td>
+                            <td class="pw-item2">
+                                <span>
+                                    {{username}}
+                                </span>
+                            <input type="username" class="edit" style="display: none;">
+                            </td>
+                            <td class="pw-item3">
+                                <span>
+                                    {{password}}
+                                </span>
+                            <input type="password" class="edit" style="display: none;">
+                            </td>
+                            <td><button class="delete-btn rounded text-white bg-danger" data-id={{id}} >Delete</button>
                             </td>
                         </tr>
                         {{/each}}
@@ -67,3 +82,4 @@
 </div>
 <script type="text/javascript" src="js/members.js"></script>
   <script src="js/view.js" type="text/javascript"></script>
+
