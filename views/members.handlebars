@@ -1,48 +1,68 @@
 <div class="container-fluid">
     <div class="fixed-top">
-      <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-          <div class="row">
-            <a class="text-white h4" href="generator.html">Generate a Random Password</a>
-          </div>
-          <div class="row">
-            <a class="navbar-brand" href="login.html">Logout</a>
-          </div>
-        </div>
-      </div>
-      <nav class="navbar navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-          aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </nav>
-    </div>
-  </div>
-  <div class="container mt-6">
-    <div class="row">
-      <div class="col-md-6 offset-md-3 bg-dark rounded" id="op">
-        <ul class="list-group pw-list">
-          <li class="list-group-item new-item bg-dark rounded" id="op"></li>
-            <form id="pw-form">
-              <div class="container">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
                 <div class="row">
-                  <div class="col-10">
-                    <input class="new-item1 form-control" placeholder="Website?" type="website" />
-                    <input class="new-item2 form-control" placeholder="Username?" type="username" />
-                    <input class="new-item3 form-control" placeholder="Password?" type="input" />
-                  </div>
-                  <div class="col-2">
-                    <button type="submit" class="btn bg-gold">Submit
-                    </button>
-                  </div>
+                    <a class="text-white h4" href="generator">Generate a Random Password</a>
                 </div>
-              </div>
-            </form>
-          </li>
-          <thead>WEBSITE USERNAME PASSWORD</thead>
-          <table class="pw-container"> </table>
-        </ul>
-      </div>
+                <div class="row">
+                    <a class="navbar-brand" href="login">Logout</a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
     </div>
-  </div>
-    <script type="text/javascript" src="js/members.js"></script>
+</div>
+<div class="container mt-6">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 bg-dark rounded" id="op">
+            <ul class="list-group pw-list">
+                <li class="list-group-item new-item bg-dark rounded" id="op"></li>
+                <form id="pw-form">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-10">
+                                <input class="new-item1 form-control" placeholder="Website?" type="website" />
+                                <input class="new-item2 form-control" placeholder="Username?" type="username" />
+                                <input class="new-item3 form-control" placeholder="Password?" type="input" />
+                            </div>
+                            <div class="col-2">
+                                <button type="submit" class="btn bg-gold">Submit
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                </li>
+                <table class="table table-bordered bg-gold mt-5">
+                    <thead class="text-center">
+                        <tr>
+                            <th>WEBSITE</th>
+                            <th>USERNAME</th>
+                            <th>PASSWORD</th>
+                            <th>DELETE</th>
+                        </tr>
+                    </thead>
+                    <tbody class="pw-container text-center">
+                        {{#each pws}}
+                        <tr>
+                            <td>{{website}}</td>
+                            <td>{{username}}</td>
+                            <td>{{password}}</td>
+                            <td><button class='rounded text-white bg-danger'>Delete</button>
+                            </td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/members.js"></script>

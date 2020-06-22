@@ -16,7 +16,7 @@ $(document).ready(function () {
 	var pws = [];
 
 	// Getting pws from database when page loads
-	getPws();
+	// getPws();
 
 	// This function resets the pws displayed with new pws from the database
 	function initializeRows() {

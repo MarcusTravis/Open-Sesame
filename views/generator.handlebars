@@ -1,0 +1,55 @@
+ <div class="container-fluid">
+      <div class="fixed-top">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            <div class="row">
+              <a class="text-white h4" href="members"
+                >Member Page</a>
+            </div>
+            <div class="row">
+              <a class="navbar-brand" href="login">Logout</a>
+            </div>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+      </div>
+    </div>
+
+    <div class="wrapper mt-5">
+      <header>
+        <h1 class="text-white">Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2 id="h2">Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div class="card-footer">
+          <div class="col-md-6 col-sm-6 col-xs-6" style="margin:auto">
+          <button id="generate" class="btn">Generate Password</button>
+            <button id="copy" class="btn btn-light" onClick="copy()">
+              Copy to Clipboard
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
