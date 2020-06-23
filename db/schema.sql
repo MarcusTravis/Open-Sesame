@@ -1,3 +1,3 @@
-CREATE DATABASE opensesame;
+DROP DATABASE IF EXISTS opensesame;
 
-USE opensesame;
+CREATE DATABASE opensesame;
