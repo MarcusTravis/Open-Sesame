@@ -7,9 +7,9 @@ $(document).ready(function () {
   var $pwContainer = $(".pw-container");
   // Adding event listeners for deleting, editing, and adding pws
   $(document).on("click", "button.delete", deletePw);
-  $(document).on("click", ".pw-item1", ".pw-item2", ".pw-item3", editPw);
-  $(document).on("keyup", ".pw-item1", ".pw-item2", ".pw-item3", finishEdit);
-  $(document).on("blur", ".pw-item1", ".pw-item2", ".pw-item3", cancelEdit);
+  $(document).on("click", ".pw-item", editPw);
+  $(document).on("keyup", ".pw-item", finishEdit);
+  $(document).on("blur", ".pw-item", cancelEdit);
   $(document).on("submit", "#pw-form", insertPw);
 
   // Our initial pws array
@@ -45,21 +45,26 @@ $(document).ready(function () {
 
   // This function handles showing the input box for a user to edit a pw
   function editPw() {
-    var currentPw = $(this).data("pw");
-    // $(this).children().hide();
-    $(this).children("span").css("display", "none");
-    $(this).children("input.edit").val(currentPw.text);
+    $(this).children().hide();
+    // $(this).children("span").css("display", "none");
+    console.log($(this).text());
+    $(this).children("input.edit").val($(this).text().trim());
     $(this).children("input.edit").css("display", "inline");
     $(this).children("input.edit").focus();
   }
+
   // This function starts updating a pw in the database if a user hits the "Enter Key"
   // While in edit mode
   function finishEdit(event) {
-    var updatedPws = $(this).data("pw");
+    const pw = {};
+    const $input = $(this).children("input");
+    pw.id = $(this).parent().attr("data-pw");
     if (event.which === 13) {
-      updatedPws.text = $(this).children("input").val().trim();
+      console.log("Enter pressed");
+      pw[$input.attr("name")] = $input.val().trim();
+      console.log(pw);
       $(this).blur();
-      updatePw(updatedPw);
+      updatePw(pw);
     }
   }
 
@@ -89,22 +94,28 @@ $(document).ready(function () {
     var $newInputRow = $(
       [
         // "<li class='list-group-item pw-item'>",
-        "<tr>",
-        "<td class=`h3`>",
+        "<tr data-pw=" + pw.id + ">",
+        "<td class='pw-item'>",
+        "<span>",
         pw.website,
+        "</span>",
+        "<input name='website' class='edit' style='display: none;'>",
         "</td>",
-        "<td class=`h3`>",
+        "<td class='pw-item'>",
+        "<span>",
         pw.username,
+        "</span>",
+        "<input name='username' class='edit' style='display: none;'>",
         "</td>",
-        "<td class=`h3`>",
+        "<td class='pw-item'>",
+        "<span>",
         pw.password,
+        "</span>",
+        "<input name='password' class='edit' style='display: none;'>",
         "</td>",
         "<td>",
         "<button class='delete rounded text-white bg-danger'>Delete</button>",
         "</td>",
-        "<input type='website' class='edit' style='display: none;'>",
-        "<input type='username' class='edit' style='display: none;'>",
-        "<input type='password' class='edit' style='display: none;'>",
         "</tr>",
         // "</li>"
       ].join(" ")
