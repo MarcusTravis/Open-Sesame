@@ -14,7 +14,7 @@
   "dependencies": {
     "bcryptjs": "2.4.3",
     "express": "^4.17.0",
-    "express-handlebars": "^4.0.4",
+    "express-handlebars": "^5.3.1",
     "express-session": "^1.16.1",
     "fs": "0.0.1-security",
     "helmet": "^3.23.1",
